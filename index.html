@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <meta name="description" content="I'm a web developer building modern, responsive websites. Check out my portfolio.">
+  <meta name="author" content="Bilal Ishtiyaque">
+  <meta name="keywords" content="web developer, software developer, frontend developer, portfolio, frontend, projects, HTML, CSS, JavaScript, React, Wordpress">
+  <link rel="canonical" href="https://bilalishtiyaque.com">
+  <!-- Open Graph -->
+  <meta property="og:title" content="My Portfolio - Bilal">
+  <meta property="og:description" content="Explore my web development projects and get in touch!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bilalishtiyaque.com/My-Portfolio/assets/images/bilal.jpg">
+  <meta property="og:url" content="https://bilalishtiyaque.com">
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="./favicon.png" sizes="512x512" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+  <main>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebarInfo">
+        <figure class="avatarBox">
+          <img src="./assets/images/bilal.jpg" alt="Hi! this is me, Bilal!" width="80">
+        </figure>
+
+        <header class="sidebarHeading">
+          <h1 title="Bilal Ishtiyaque">Bilal Ishtiyaque</h1>
+          <p class="title">Web developer</p>
+        </header>
+
+        <button class="infoBtn">
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebarInfoContent">
+        <div class="separator"></div>
+        <ul class="contactList">
+          <li class="contactItem">
+            <div class="iconBox">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contactInfo emailTooltip" data-tooltip="connect@bilalishtiyaque.com">
+              <p>Email</p>
+              <a href="mailto:connect@bilalishtiyaque.com" class="contactLink" title="connect@bilalishtiyaque.com">connect@bilalishtiyaque.com</a>
+            </div>
+          </li>
+          <li class="contactItem">
+            <div class="iconBox">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <div class="contactInfo">
+              <p title="looking for developer...?">availability status</p>
+              <span class="availabilityStatus">Online <ion-icon name="ellipse"></ion-icon></span>
+            </div>
+          </li>
+          <li class="contactItem">
+            <div class="iconBox">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contactInfo">
+              <p>Birthday</p>
+              <time datetime="2005-12-29">Dec 29, 2005</time>
+            </div>
+          </li>
+          <li class="contactItem">
+            <div class="iconBox">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contactInfo">
+              <p>Location</p>
+              <address>Karachi, Pakistan.</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <div class="socialList">
+          <li class="socialItem">
+            <a href="https://www.linkedin.com/in/bilalishtiyaque/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="socialItem">
+            <a href="https://github.com/Bilal-Ishtiyaque">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          
+        </div>
+      </div> 
+
+    </aside>
+
+    <!-- MAIN SECTIONS -->
+    <section class="mainSection">
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbarList">
+          <li>
+            <button class="navbarLink active">About</button>
+          </li>
+          <li>
+            <button class="navbarLink">Resume</button>
+          </li>
+
+          <li>
+            <button class="navbarLink">Portfolio</button>
+          </li>
+
+          <li>
+            <button class="navbarLink">Blog</button>
+          </li>
+
+          <li>
+            <button class="navbarLink">Contact</button>
+          </li>
+        </ul>
+
+      </nav>
+
+      <!-- ABOUT -->
+      
+      <article class="about" data-page="about">
+        <header>
+          <h2 class="h2 articleTitle">About me</h2>
+        </header>
+        <div class="aboutCaption"> 
+          <p>I'm the one you are looking for; An energetic, motivated and solution focused individual! I have been working in web development for 2 years and working with a range of technologies to create both the front end and back end of websites. I’m hell-bent on becoming a top-tier developer because I enjoy turning designs into beautiful and intuitive websites.</p>
+          <p>My goal is to build your website that is not only functional but also visually appealing and easy to use. Moreover, I add personal touch to your product and make sure it clearly communicates your brand and message.</p>
+          <p>I offer services in WordPress development, Custom front-end and back-end Web Development, high-performance backend solutions, API integration, and secure data handling.</p>
+        </div>
+
+        <section class="service">
+          <h3 class="h3">What i'm doing</h3>
+          <ul class="serviceList">
+
+            <li>
+              <figure>
+                <ion-icon name="logo-wordpress"></ion-icon>
+              </figure>
+              <figcaption>
+                <h4 class="h4">Wordpress</h4>
+                <p>WordPress solutions with custom themes, plugins, and intuitive user experiences.</p>
+              </figcaption>
+            </li>
+
+            <li>
+              <figure>
+                <img src="./assets/images/icon-dev.svg" alt="Web Development Icon" width="40">
+              </figure>
+              <figcaption>
+                <h4 class="h4">Web Development</h4>
+                <p>High-quality development of sites at the professional level.</p>
+              </figcaption>
+            </li>
+
+            <li>
+              <figure>
+                <img src="./assets/images/icon-design.svg" alt="Design Icon" width="40">
+              </figure>
+              <figcaption>
+                <h4 class="h4">Web Design</h4>
+                <p>The most modern and high-quality design made at a professional level.</p>
+              </figcaption>
+            </li>
+            
+            <li>
+              <figure>
+                <svg width="47px" height="47px" viewBox="0 0 64 64" id="fill" xmlns="http://www.w3.org/2000/svg"><polygon points="32 7 28 7 28 3 14 3 14 9 7 9 7 17 3 17 3 47 7 47 7 55 14 55 14 61 28 61 28 57 32 57 32 7" style="fill:hsl(45deg 54.01% 54.8%)"/><polygon points="32 7 36 7 36 3 50 3 50 9 57 9 57 17 61 17 61 47 57 47 57 55 50 55 50 61 36 61 36 57 32 57 32 7" style="fill:hsl(45deg 54.01% 54.8%)"/><path d="M25,13H23V7a1,1,0,0,1,1-1h4V8H25Z" style="fill:#fff"/><path d="M29,57H27V52H23a1,1,0,0,1-1-1V47h2v3h4a1,1,0,0,1,1,1Z" style="fill:#fff"/><path d="M18,56H14V54h3V43a1,1,0,0,1,1-1h6v2H19V55A1,1,0,0,1,18,56Z" style="fill:#fff"/><path d="M12,48H7V46h4V39H9v2H7V38a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1v9A1,1,0,0,1,12,48Z" style="fill:#fff"/><path d="M24,24H18a1,1,0,0,1-1-1V18H14a1,1,0,0,1-1-1V9h2v7h3a1,1,0,0,1,1,1v5h5Z" style="fill:#fff"/><path d="M12,28H7a1,1,0,0,1-1-1V17H8v9h4Z" style="fill:#fff"/><path d="M41,13H39V8H36V6h4a1,1,0,0,1,1,1Z" style="fill:#fff"/><path d="M37,57H35V51a1,1,0,0,1,1-1h4V47h2v4a1,1,0,0,1-1,1H37Z" style="fill:#fff"/><path d="M50,56H46a1,1,0,0,1-1-1V44H40V42h6a1,1,0,0,1,1,1V54h3Z" style="fill:#fff"/><path d="M57,48H52a1,1,0,0,1-1-1V38a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1v3H55V39H53v7h4Z" style="fill:#fff"/><path d="M46,24H40V22h5V17a1,1,0,0,1,1-1h3V9h2v8a1,1,0,0,1-1,1H47v5A1,1,0,0,1,46,24Z" style="fill:#fff"/><path d="M57,28H52V26h4V17h2V27A1,1,0,0,1,57,28Z" style="fill:#fff"/><path d="M61,16H58V9a1,1,0,0,0-1-1H51V3a1,1,0,0,0-1-1H36a1,1,0,0,0-1,1V6H29V3a1,1,0,0,0-1-1H14a1,1,0,0,0-1,1V8H7A1,1,0,0,0,6,9v7H3a1,1,0,0,0-1,1V47a1,1,0,0,0,1,1H6v7a1,1,0,0,0,1,1h6v5a1,1,0,0,0,1,1H28a1,1,0,0,0,1-1V58h6v3a1,1,0,0,0,1,1H50a1,1,0,0,0,1-1V56h6a1,1,0,0,0,1-1V48h3a1,1,0,0,0,1-1V17A1,1,0,0,0,61,16ZM60,46H53V39h2v2h2V38a1,1,0,0,0-1-1H52a1,1,0,0,0-1,1v9a1,1,0,0,0,1,1h4v6H47V43a1,1,0,0,0-1-1H40v2h5V55a1,1,0,0,0,1,1h3v4H37V52h4a1,1,0,0,0,1-1V47H40v3H36a1,1,0,0,0-1,1v5H33V40.212H31V56H29V51a1,1,0,0,0-1-1H24V47H22v4a1,1,0,0,0,1,1h4v8H15V56h3a1,1,0,0,0,1-1V44h5V42H18a1,1,0,0,0-1,1V54H8V48h4a1,1,0,0,0,1-1V38a1,1,0,0,0-1-1H8a1,1,0,0,0-1,1v3H9V39h2v7H4V18H6v9a1,1,0,0,0,1,1h5V26H8V10h5v7a1,1,0,0,0,1,1h3v5a1,1,0,0,0,1,1h6V22H19V17a1,1,0,0,0-1-1H15V4H27V6H24a1,1,0,0,0-1,1v6h2V8h6V24h2V8h6v5h2V7a1,1,0,0,0-1-1H37V4H49V16H46a1,1,0,0,0-1,1v5H40v2h6a1,1,0,0,0,1-1V18h3a1,1,0,0,0,1-1V10h5V26H52v2h5a1,1,0,0,0,1-1V18h2Z"/><path d="M38.8,33.848l2-.711V30.863l-2-.711L38.119,28.5l.912-1.921-1.607-1.607-1.921.912L33.848,25.2l-.711-2H30.863l-.711,2-1.655.686-1.921-.912-1.607,1.607.912,1.921L25.2,30.152l-2,.711v2.274l2,.711.686,1.655-.912,1.921,1.607,1.607,1.921-.912,1.655.685.711,2h2.274l.711-2,1.655-.685,1.921.912,1.607-1.607L38.119,35.5ZM32,35a3,3,0,1,1,3-3A3,3,0,0,1,32,35Z" style="fill:hsl(0, 0%, 19%)"/></svg>
+              </figure>
+              <figcaption>
+                <h4 class="h4">Business Logics</h4>
+                <p>High-performance backend solutions with API integration, and secure data handling.</p>
+              </figcaption>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+      <!-- RESUME -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 articleTitle">Resume</h2>
+        </header>
+
+        <!-- EDUCATION -->
+        <section class="timeline">
+          <div class="resumeHeading">
+            <div class="iconBox">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timelineList">
+
+            <li class="timelineItem">
+
+              <h4 class="h4 timelineItemTitle">GOVT. MONOTECHNIC INSTITUTE, KARACHI</h4>
+
+              <span>2022 — 2025 GRADE: A</span>
+
+              <p class="timelineText">
+                High School Diploma of Asscociate Engineer In Computer Information technology (SINDH TECHNICAL BOARD)
+              </p>
+
+            </li>
+
+            <li class="timelineItem">
+
+              <h4 class="h4 timelineItemTitle">APTECH COMPUTER EDUCATION, PAKISTAN</h4>
+
+              <span>2022 — 2025 GRADE: CREDIT</span>
+
+              <p class="timelineText">
+                Advance Diploma In Software Engineering (5th semester In Progress)</p>
+
+            </li>
+
+            <li class="timelineItem">
+
+              <h4 class="h4 timelineItemTitle">WAVES GRAMMAR SCHOOL, KARACHI</h4>
+
+              <span>2019 — 2021 GRADE: B</span>
+
+              <p class="timelineText">Matriculation (Science)</p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="timeline">
+          <div class="resumeHeading">
+            <div class="iconBox">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timelineList">
+
+            <li class="timelineItem">
+              <a href="javascript:;" class="h4 timelineItemTitle" title="click to open company's profile">Devronix Solutions <span class="timelineLocation">(FL-4/22 Block - 5 Gulshan e Iqbal Karachi)</span></a>
+              <span>2024 — 2025</span>
+              <p class="timelineText">I contributed to the development of live projects, focusing on frontend technologies like HTML, CSS, BootStrap & JavaScript. I Worked closely with senior developers to design and implement interfaces, cross-browser compatibility and mobile responsiveness.</p>
+            </li>
+
+            <li class="timelineItem">
+              <h4 class="h4 timelineItemTitle">Fiverr, Upwork</h4>
+              <span>2023 - Present <span class="timelineInfo">(project based)</span></span> 
+              <p class="timelineText">I also provide web services on a project basis and deliver customized solutions for clients locally and also internationally.</p>
+            </li>
+
+            <li class="timelineItem">
+              <h4 class="h4 timelineItemTitle">Team Zenix <span class="timelineLocation">(Block 8, Karachi)</span></h4>
+              <span>Sales</span>
+              <p class="timelineText">Responsibility was to find potential clients on Twitch and sending cold DMs on Discord and Twitter using a pre-written script to promote services and generate interest in purchasing arts such as Character Art, Emotes, Overlays, Pixel Art, Reference Sheets, 2D & 3D art.</p>
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="skill">
+
+          <h3 class="h3">My Skills</h3>
+
+          <div class="skillWrap cardContent">
+
+            <div class="skillSet">
+              <h5 class="h5">Core Web Technologies:</h5>
+
+              <ul class="skillList">
+                <li>
+                  <figure>
+                    <img src="./assets/images/javascript.svg" alt="HTML" style="height: 2.6rem;">
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <img src="./assets/images/html.svg" alt="HTML">
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <img src="./assets/images/css3.svg" alt="HTML" style="height: 2.6rem;">
+                  </figure>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="skillSet">
+              <h5 class="h5">UI / Styling Frameworks:</h5>
+
+              <ul class="skillList">
+                <li>
+                  <figure>
+                    <img src="./assets/images/figma.svg" alt="HTML" >
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <img src="./assets/images/bootstrap.png" alt="HTML">
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <img src="./assets/images/tailwind.svg" alt="HTML">
+                  </figure>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="skillSet">
+              <h5 class="h5">Libraries & Frameworks:</h5>
+
+              <ul class="skillList">
+                <li>
+                  <figure>
+                    <img src="./assets/images/react.svg" alt="HTML" >
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <img src="./assets/images/nodejs.svg" alt="HTML">
+                  </figure>
+                </li>
+                
+              </ul>
+
+            </div>
+
+            <div class="skillSet">
+              <h5 class="h5">Development Softwares:</h5>
+
+              <ul class="skillList">
+                <li>
+                  <figure>
+                    <img src="./assets/images/vscode.svg" alt="HTML" >
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <img src="./assets/images/visualStudio.svg" alt="HTML" style="height: 2.6rem;">
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <img src="./assets/images/github.svg" alt="HTML" style="background-color: white; border-radius: 50%;">
+                  </figure>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="skillSet">
+              <h5 class="h5"> Database Technologies:</h5>
+
+              <ul class="skillList">
+                <li>
+                  <figure>
+                    <img src="./assets/images/mongodb.svg" alt="HTML">
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="./assets/images/sqlServer.svg" alt="HTML" style="width: 3.7rem;">
+                  </figure>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="skillSet">
+              <h5 class="h5">Assistance but not reliance:</h5>
+
+              <ul class="skillList">
+                <li>
+                  <figure>
+                    <img src="./assets/images/chatgpt-icon.png" alt="HTML">
+                  </figure>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </article>
+
+      <!-- PORTFOLIO -->
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 articleTitle">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <!-- DESKTOP FILTER LIST -->
+
+          <ul class="filterList">
+
+            <li class="filterItem">
+              <button class="active">All</button>
+            </li>
+
+            <li class="filterItem">
+              <button>Web design</button>
+            </li>
+
+            <li class="filterItem">
+              <button>Applications</button>
+            </li>
+
+            <li class="filterItem">
+              <button>Web development</button>
+            </li>
+
+            <li class="filterItem">
+              <button>Wordpress</button>
+            </li>
+
+            <li class="filterItem">
+              <button>Most Recent</button>
+            </li>
+
+          </ul>
+
+          <!-- MOBILE FILTER LIST -->
+
+          <div class="filterSelect">
+
+            <button class="filterSelectBtn">
+
+              <div class="selectValue">Select category</div>
+
+              <div class="selectIcon iconBox">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="filterSelectList">
+
+              <li class="filterSelectOption">
+                <button>All</button>
+              </li>
+
+              <li class="filterSelectOption">
+                <button>Web design</button>
+              </li>
+
+              <li class="filterSelectOption">
+                <button>Applications</button>
+              </li>
+
+              <li class="filterSelectOption">
+                <button>Web development</button>
+              </li>
+
+              <li class="filterSelectOption">
+                <button>Wordpress</button>
+              </li>
+
+              <li class="filterSelectOption">
+                <button>Most Recent</button>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+          <!-- PROJECTS -->
+
+          <ul class="projectList">
+
+            <li class="projectItem  active" data-category="wordpress" data-recent="most recent">
+              <a href="https://multibrandstore.online/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/wordpress-4.jpg" alt="multibrandstore" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Multi Brand Store</h3>
+
+                <p class="projectCategory">Wordpress — This is full-fledged E-commerce website. Click to Explore.</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem active" data-category="web development" data-recent="most recent">
+              <a href="https://bilal-ishtiyaque.github.io/Hospinorm-Consulting/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-1.jpg" alt="Hospinorm Consulting" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Hospinorm Consulting</h3>
+
+                <p class="projectCategory">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem active" data-category="web development" data-recent="most recent">
+              <a href="https://bilal-ishtiyaque.github.io/The-Gift-Kingdom/" target="_blank" rel="noopener noreferrer">
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-2.jpg" alt="Gift Kingdom" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Gift Kingdom</h3>
+
+                <p class="projectCategory">Web development</p>
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="wordpress" data-recent="most recent">
+              <a href="https://graphicgenius.net/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/wordpress-5.jpg" alt="Graphics Genius" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Graphics Genius</h3>
+
+                <p class="projectCategory">Wordpress — Company Portfolio. Click to Explore.</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="wordpress">
+              <a href="https://farfallacrowns.com/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/wordpress-2.jpg" alt="Far Falla Crowns" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Far Falla Crowns</h3>
+
+                <p class="projectCategory">Wordpress</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem active" data-category="web development" data-recent="most recent">
+              <a href="https://bilal-ishtiyaque.github.io/MBM-Holding/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-3.jpg" alt="MBM HOLDING" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">MBM Holding</h3>
+
+                <p class="projectCategory">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem active" data-category="web development">
+              <a href="https://bilal-ishtiyaque.github.io/Blog-DailyDiary/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-4.jpg" alt="Daily Diary" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Daily Diary</h3>
+
+                <p class="projectCategory">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="wordpress">
+              <a href="https://vebxcode.com/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/wordpress-3.jpg" alt="Veb X Code" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Veb X Code</h3>
+
+                <p class="projectCategory">Wordpress</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="web development">
+              <a href="https://bilal-ishtiyaque.github.io/iSaving-Web/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-7.jpg" alt="iSaving" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">iSaving</h3>
+
+                <p class="projectCategory">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="wordpress">
+              <a href="https://mjfsglobal.com/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/wordpress-1.jpg" alt="MFJS GLOBAL" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">MFJS GLOBAL</h3>
+
+                <p class="projectCategory">Wordpress</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="web development">
+              <a href="https://bilal-ishtiyaque.github.io/modern-UI-Login-Registration-Form/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-8.jpg" alt="Modern UI Form" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Modern UI Form</h3>
+
+                <p class="projectCategory">web development</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="web development">
+              <a href="https://bilal-ishtiyaque.github.io/iSaving/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-9.jpg" alt="iSaving / HP Discounts" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">iSaving / HP Discounts</h3>
+
+                <p class="projectCategory">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="web development">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7191170194000527365/?originTrackingId=Md2pEMR1QzmoeclvFfA7Gw%3D%3D" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-10.jpg" alt="News Website" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">News 2024</h3>
+
+                <p class="projectCategory">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="web development">
+              <a href="https://bilal-ishtiyaque.github.io/marketing-agency-web/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-11.jpg" alt="Marketing Agency" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Marketing Agency</h3>
+
+                <p class="projectCategory">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="web development">
+              <a href="https://bilal-ishtiyaque.github.io/SEO-Landing-or-Home-Page/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-12.jpg" alt="SEO Landing Page" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">SEO Landing Page</h3>
+
+                <p class="projectCategory">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="web design">
+              <a href="javascript:;">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdesign-1.jpg" alt="Web Design Project Coming Soon..." loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Coming Soon...</h3>
+
+                <p class="projectCategory">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="web development">
+              <a href="https://bilal-ishtiyaque.github.io/Landing-page-Gadgets-and-Children/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-14.jpg" alt="Gadgets Early On Children" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Gadgets Early On Children</h3>
+
+                <p class="projectCategory">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="web development">
+              <a href="https://bilal-ishtiyaque.github.io/Music-Player/" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webdev-15.jpg" alt="music player" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Music Player</h3>
+
+                <p class="projectCategory">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="applications">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7247729800021262336/?originTrackingId=m8036qZsQLmVMNPWdxrcIg%3D%3D" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/app-1.png" alt="ATM Application" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">ATM App</h3>
+
+                <p class="projectCategory">ASP.NET Core Web Application</p>
+
+              </a>
+            </li>
+
+            <li class="projectItem  active" data-category="applications">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7247737121057214465/?originTrackingId=ricfBl6AQiW3m5MaW25NZA%3D%3D" target="_blank" rel="noopener noreferrer">
+
+                <figure>
+                  <div class="projectItemIconBox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/app-2.png" alt="𝗢𝗻𝗹𝗶𝗻𝗲 𝗛𝗲𝗹𝗽 𝗗𝗲𝘀𝗸” system" loading="lazy">
+                </figure>
+
+                <h3 class="projectTitle">Online Help Desk System</h3>
+
+                <p class="projectCategory">ASP.NET Core Web Application</p>
+
+              </a>
+            </li>
+             
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- BLOG -->
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 articleTitle">Blog</h2>
+        </header>
+
+        <section class="blogPosts">
+          <ul class="blogList">
+            <li class="blogItem">
+              <a href="javascript:;">
+                <figure>
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+                <figcaption>
+                  <div class="blogMeta">
+                    <p>Frontend</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-04-30">coming soon...</time>
+                  </div>
+                  <h3 class="h3 blogTitle">Javascript Vs React</h3>
+                  <div class="blogText">
+                    <p>If you prefer a more intuitive syntax for creating UI elements and are willing to learn JSX, React is a good option.</p>
+                  </div>
+                </figcaption>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+
+      </article>
+
+      <!-- CONTACT -->
+       <article class="contact active" data-page="contact">
+
+        <header>
+          <h2 class="h2 articleTitle">Contact</h2>
+        </header>
+
+        <section class="mapContainer">
+          <figure>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924237.7091839124!2d66.49598340315221!3d25.192983725749375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1743359038805!5m2!1sen!2s" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contactForm">
+          <h3 class="h3 formTitle">Contact Form</h3>
+
+
+           <form class="form">
+
+            <div class="formFieldsWrap">
+              <div>
+                <input type="text" name="fullname" class="formInput" id="fullName" placeholder="Full name">
+                <div class="inputError" id="fullNameError"></div>
+              </div>
+          
+              <div>
+                <input type="email" name="email" class="formInput" id="email" placeholder="Email address">
+                <div class="inputError" id="emailError"></div>
+              </div>
+            </div>
+          
+            <div class="textAreaGroup">
+              <textarea name="message" class="formInput" id="message" placeholder="Your Message"></textarea>
+              <div class="inputError" id="messageError"></div>
+            </div>
+            
+            <button class="formBtn" type="submit" disabled>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+          
+
+        </section>
+
+       </article>
+
+    </section>
+
+    <!-- THANKYOU MODAL -->
+
+    <dialog id="tyModal" class="thankyouModal">
+          <button class="thankyouModalCloseBtn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+            <figure class="thankyouModalImage">
+              <dotlottie-player class="flyingPlaneLottie" src="https://lottie.host/015a84cb-5471-4eb0-9e10-7d6305c96243/Ak9iFYAcwQ.lottie" background="transparent" speed="1" loop></dotlottie-player>
+               <img src="./assets/images/try-again.png" class="tryAgainIcon" alt="try-again-icon">
+            </figure>
+          <div class="thankyouModalText">
+            <h2 class="h2 thankyouModalTitle">Thank you!</h2>
+            <p class="thankyouModalPara">We'll be in touch shortly</p>
+            <span>If urgent, contact me directly at connect@bilalishtiyaque.com</span>
+          </div>
+    </dialog>
+
+  </main>
+
+  <!-- JS FILE LINK -->
+  <script src="./assets/js/script.js"></script>
+  <!-- ION ICON LINKS -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+</body>
+</html>
+
+<!--
+ © 2025 Bilal Ishtiyaque. All rights reserved. This code is part of the "My-Portfolio" project. Unauthorized copying, reproduction, or distribution of this code, in whole or in part, is strictly prohibited without express written permission.
+ For licensing inquiries, contact: connect@bilalishtiyaque.com
+-->
