@@ -1,18 +1,10 @@
-/*  © 2025 Bilal Ishtiyaque. All rights reserved. Do not copy or distribute without permission. This code is licensed for personal use only. Contact: connect@bilalishtiyaque.com */
+/*  © 2025 Bilal Ishtiyaque. All rights reserved. Do not copy or distribute without permission. This code is licensed for personal use only. Contact: mail@bilalishtiyaque.com */
 
 "use strict";
 
 // SIDEBAR
 const sideBar = document.querySelector(".sidebar");
 const sidebarBtn = document.querySelector(".infoBtn");
-// THANKYOU MODAL
-const form = document.querySelector(".form");
-const thankyouModal = document.getElementById("tyModal");
-const thankyouModalCloseBtn = document.querySelector(".thankyouModalCloseBtn");
-const flyingPlaneLottie = document.querySelector(".flyingPlaneLottie");
-const tryAgainIcon = document.querySelector(".tryAgainIcon");
-const thankyouTitle = document.querySelector(".thankyouModalTitle");
-const thankyouPara = document.querySelector(".thankyouModalPara");
 //PORTFOLIO FILTER FUNCTIONALITY
 const filterSelectBtn = document.querySelector(".filterSelectBtn");
 const filterSelectOptions = document.querySelectorAll(".filterSelectOption button");
@@ -20,6 +12,7 @@ const filterSelectValue = document.querySelector(".selectValue");
 //PORTFOLIO FILTER FUNCTIONALITY FOR DESKTOP
 const filterBtns = document.querySelectorAll(".filterItem button");
 //FORM
+const form = document.querySelector(".form");
 const formBtn = document.querySelector(".formBtn");
 const fullNameInput = document.getElementById("fullName");
 const emailInput = document.getElementById("email");
@@ -235,23 +228,18 @@ messageInput.addEventListener("input", debounce(() => {
 );
 
 
-let lottieIsReady = false;
-
-// Ensure Lottie is ready before using .play() or .stop()
-flyingPlaneLottie.addEventListener("ready", () => {
-  lottieIsReady = true;
-});
-
-
-form.addEventListener("submit", async function (event){
-  event.preventDefault();
+// Submit handler
+form.addEventListener("submit", function (event) {
   const isValid = checkFormValidity();
 
   if (!isValid) {
+    event.preventDefault();  // Stop submission if invalid
+
+    // Show submit error if needed
     const existingMessage = form.querySelector(".submitError");
     if (!existingMessage) {
       const errorMessage = document.createElement("p");
-      errorMessage.innerText = "Please fix the errors in the form before submitting.";
+      errorMessage.innerText = "Hmm...Some fields are empty or invalid. Please fix the errors in the form.";
       errorMessage.classList.add("submitError");
       form.appendChild(errorMessage);
 
@@ -261,63 +249,6 @@ form.addEventListener("submit", async function (event){
     }
     return;
   }
-
-  const formData = new FormData(form);
-
-  try {
-    const response = await fetch("https://formspree.io/f/myzwebnv", {
-      method: "POST",
-      body: formData,
-      headers: {
-        Accept: "application/json"
-      }
-    });
-
-    // Open modal
-    thankyouModal.showModal();
-
-    if (response.ok) {
-      form.reset();
-
-      // Show Lottie, hide error state
-      flyingPlaneLottie.style.display = "block";
-      tryAgainIcon.style.display = "none";
-      thankyouTitle.textContent = "Thank you!";
-      thankyouPara.textContent = "We'll be in touch shortly";
-
-      // Play animation only if ready
-      if (lottieIsReady) flyingPlaneLottie.play();
-      else {
-        flyingPlaneLottie.addEventListener("ready", () => {
-          flyingPlaneLottie.play();
-        }, { once: true });
-      }
-    } else {
-      showErrorModal();
-    }
-  } catch (error) {
-    showErrorModal();
-  }
-  
-
+  // If valid, allow form to submit natively (no fetch needed)
+  // Formspree will handle the POST submission as intended.
 });
-
-
-function showErrorModal() {
-  flyingPlaneLottie.style.display = "none";
-  tryAgainIcon.style.display = "block";
-  thankyouTitle.textContent = "Try Again";
-  thankyouPara.textContent = "Something went wrong";
-}
-
-thankyouModalCloseBtn.addEventListener("click", () => {
-  // Reset state when modal is closed
-  thankyouModal.close();
-
-  if (lottieIsReady) flyingPlaneLottie.stop();
-  flyingPlaneLottie.style.display = "block"; // Reset to default state
-  tryAgainIcon.style.display = "none";
-  thankyouTitle.textContent = "Thank you!";
-  thankyouPara.textContent = "We'll be in touch shortly";
-});
-

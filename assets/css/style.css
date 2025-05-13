@@ -2,7 +2,7 @@
   #style.css
 \*-----------------------------------*/
 
-/* © 2025 Bilal Ishtiyaque. All rights reserved. This stylesheet is part of the "My-Portfolio" project. Unauthorized use is prohibited. Contact: connect@bilalishtiyaque.com  */
+/* © 2025 Bilal Ishtiyaque. All rights reserved. This stylesheet is part of the "My-Portfolio" project. Unauthorized use is prohibited. Contact: mail@bilalishtiyaque.com  */
 
 /*-----------------------------------*\
   #CUSTOM PROPERTIES
@@ -112,7 +112,7 @@ main{margin: 0.938rem 0.75rem;margin-bottom: 4.688rem;min-width: 16.188rem;}
 .serviceList li figcaption h4{margin-bottom: 0.438rem;}
 .serviceList li figcaption p{color: var(--light-gray);font-size: var(--fs-6);font-weight: var(--fw-3);line-height: 1.6;}
 
-.thankyouModal:open {opacity: 1;transform: scale(1); display: grid;}
+/* .thankyouModal:open {opacity: 1;transform: scale(1); display: grid;}
 .thankyouModal {opacity: 0;transform: scale(1.2);border: 1px solid var(--jet);background: var(--eerie-black-2);border-radius: 0.875rem;box-shadow: var(--shadow-5);padding: 1.938rem;margin: auto;transition: all 0.3s allow-discrete; overflow: hidden; grid-template-rows: 269px 1fr; padding-bottom: 2rem;}
 @starting-style {.thankyouModal:open{opacity: 0;transform: scale(1.2);}}
 .thankyouModal::backdrop {background: hsl(0, 0%, 5%);opacity: 0;transition: all 0.3s allow-discrete;}
@@ -123,7 +123,7 @@ main{margin: 0.938rem 0.75rem;margin-bottom: 4.688rem;min-width: 16.188rem;}
 .thankyouModalText{text-align: center;color: white;}
 .thankyouModalText p{background-image: linear-gradient(45deg, #6EBF34 0%, #FFDA6B 43%, #FFBB5C 43%, #6EBF34 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .thankyouModalText span{font-size: var(--fs-8); color: hsl(0, 0%, 41%); margin-top: 1rem;}
-.tryAgainIcon{width: 9rem;margin-inline: auto; transform: translateY(4rem); display: none;}
+.tryAgainIcon{width: 9rem;margin-inline: auto; transform: translateY(4rem); display: none;} */
 
 .timeline{margin-bottom: 2.188rem;}
 .resumeHeading{display: flex;align-items: center;gap: 0.938rem;margin-bottom: 1.563rem;}
@@ -265,7 +265,7 @@ main{margin-top:3.75rem;margin-bottom: 6.25rem;}
 .navbarLink{--fs-8:0.938rem;}
 .articleTitle{padding-bottom: 1.25rem;}
 .filterSelect{display: none;}
-.filterList {display: flex;justify-content: flex-start;align-items: center;gap: 1.563rem;padding-left: 0.313rem;margin-bottom: 1.875rem;}
+.filterList {display: flex;justify-content: space-between;align-items: center;gap: 1.563rem;padding-left: 0.313rem;margin-bottom: 1.875rem; flex-wrap:wrap;}
 .filterItem button {color: var(--light-gray);font-size: var(--fs-5);transition: var(--transition-1);}
 .filterItem button:hover { color: var(--light-gray-70); }
 .filterItem button.active { color: var(--orange-yellow-crayola); }
@@ -292,6 +292,7 @@ main{margin-bottom: 3.75rem;}
 .navbarLink{font-weight: var(--fw-500);}
 .serviceList {grid-template-columns: 1fr 1fr;gap: 1.25rem 1.563rem;}
 .projectList{grid-template-columns: repeat(3, 1fr);}
+.filterList {justify-content: flex-start;}
 .blog-banner-box { height: 14.375rem;}
 .blogItem > a figure{height: 14.375rem; }
 }
