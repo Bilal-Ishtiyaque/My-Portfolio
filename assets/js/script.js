@@ -251,4 +251,5 @@ form.addEventListener("submit", function (event) {
   }
   // If valid, allow form to submit natively (no fetch needed)
   // Formspree will handle the POST submission as intended.
+  formBtn.disabled = true;
 });
