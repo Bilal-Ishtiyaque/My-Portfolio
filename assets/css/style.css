@@ -319,9 +319,9 @@ main{max-width: 75rem;margin-inline: auto;display: flex;justify-content: center;
 .contactList{grid-template-columns: 1fr;}
 .contactInfo .contactLink{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .contactInfo.emailTooltip{position: relative;}
-.contactInfo.emailTooltip::before,.contactInfo.emailTooltip::after {--scale: 0;position: absolute;left: -4rem;top: -3rem;transform: scale(var(--scale));transition: 150ms transform;}
+.contactInfo.emailTooltip::before,.contactInfo.emailTooltip::after {--scale: 0;position: absolute;left: -3.3rem;top: -3rem;transform: scale(var(--scale));transition: 150ms transform;}
 .contactInfo.emailTooltip::before {content: attr(data-tooltip);color: white;padding: 0.4rem 0.8rem;border-radius: 0.3rem;text-align: center;width: max-content;background: var(--onyx);font-size: 0.8rem;transform-origin: center;}
-.contactInfo.emailTooltip::after {content: '';border: 0.9rem solid transparent;border-top-color: var(--onyx);transform-origin:bottom center;transform: translateY(1.8rem) translateX(4rem) scale(var(--scale));}
+.contactInfo.emailTooltip::after {content: '';border: 0.9rem solid transparent;border-top-color: var(--onyx);transform-origin:bottom center;transform: translateY(1.8rem) translateX(3.3rem) scale(var(--scale));}
 .contactInfo.emailTooltip:hover::before,.contactInfo.emailTooltip:hover::after {--scale:1;}
 .contactInfo :is(.contactLink, .availabilityStatus, time, address){--fs-7: 0.875rem;font-weight: var(--fw-300);}
 .sidebarInfoContent .separator:not(:first-child){margin: 0.938rem 0;opacity: 0;}
