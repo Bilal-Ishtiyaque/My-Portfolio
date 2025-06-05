@@ -106,8 +106,6 @@ main{margin: 0.938rem 0.75rem;margin-bottom: 4.688rem;min-width: 16.188rem;}
 .serviceList li::before {content: "";position: absolute;inset: 1px;background: var(--bg-gradient-jet);border-radius: inherit;z-index: -1;}
 .serviceList li figure{margin-bottom: 0.625rem; text-align: center;}
 .serviceList li figure img{margin: auto;}
-.serviceList li figure svg{ stroke:hsla(0, 0%, 100%, 0.11); margin-inline: auto;}
-.serviceList li figure ion-icon{ color: hsl(45deg 54.01% 54.8%); font-size: 3rem; margin-inline: auto; }
 .serviceList li figcaption{text-align: center;}
 .serviceList li figcaption h4{margin-bottom: 0.438rem;}
 .serviceList li figcaption p{color: var(--light-gray);font-size: var(--fs-6);font-weight: var(--fw-3);line-height: 1.6;}
