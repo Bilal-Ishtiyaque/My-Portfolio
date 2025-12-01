@@ -179,7 +179,7 @@ function validateMessage(message) {
   const spammyRegex = /\b(free|offer|discount|cheap|promo|sale|subscribe|limited time|win|winner|cash|money|credit card|loan|earn|guaranteed|viagra|porn|sex|sexy|fuck|fuck you|nude|xxx|adult|dating|escort|casino|gamble|mom|mother|sister|sis|sibling|investment|miracle|weight loss|ass|dick|mouth)\b/i;;
   if (spammyRegex.test(trimmedMessage)) return "Please remove promotional or inappropriate words";
   // Check for multiple consecutive spaces inside the message
-  if (/\s{2,}/.test(trimmedMessage)) return "Message has extra spaces between words";
+  if (/\s{10,}/.test(trimmedMessage)) return "Message has too many spaces between words";
   // If all checks pass, return an empty string (valid message)
   return "";
 }
