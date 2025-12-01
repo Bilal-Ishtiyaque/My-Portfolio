@@ -147,7 +147,7 @@ main{margin: 0.938rem 0.75rem;margin-bottom: 4.688rem;min-width: 16.188rem;}
 .filterSelectBtn.active .selectIcon ion-icon{transform: rotate(0.5turn);}
 .filterSelectList{background: var(--eerie-black-2); transform: scaleY(0); transform-origin: top; position: absolute;top: calc(100% + 6px);width: 100%;padding: 6px;border: 1px solid var(--jet);border-radius: 0.875rem;z-index: 2;opacity: 0;visibility: hidden;pointer-events: none;transition: 0.15s ease-in-out;/* here i could have use d-none to d-block using @starting style instead of visibility hidden */}
 .filterSelectBtn.active + .filterSelectList{opacity: 1; visibility: visible; pointer-events: all; transform: scaleY(1);}
-.filterSelectOption button{background: var(--eerie-black-2);color: var(--light-gray);font-size: var(--fs-6);font-weight: var(--fw-300);text-transform: capitalize;width: 100%;padding: 0.5rem 0.625rem;border-radius: 0.5rem;}
+.filterSelectOption button{color: var(--light-gray);font-size: var(--fs-6);font-weight: var(--fw-300);text-transform: capitalize;width: 100%;padding: 0.5rem 0.625rem;border-radius: 0.5rem;}
 .filterSelectOption button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
 .projectList {display: grid;grid-template-columns: 1fr;gap: 1.875rem;margin-bottom: 0.625rem;}
 .projectItem{display: none;}
@@ -200,6 +200,9 @@ textarea.formInput::-webkit-resizer { display: none;}
 .formBtn:disabled {opacity: 0.7;cursor: not-allowed;}
 .formBtn:disabled:hover { background: var(--border-gradient-onyx); }
 .formBtn:disabled:hover::before { background: var(--bg-gradient-jet); }
+/* AI Button effect */
+.showcase-button {background: radial-gradient( circle at 70% 50%, #FC72FF 0%, #8F68FF 20%, #487BFF 40%, #2CD9FF 60%, #2CFFCC 80%, #8F68FF 100%); background-size: 200% auto; color: #000; background-clip: text; -webkit-text-fill-color: transparent; animation: animatedTextGradient 4s linear infinite;}
+@keyframes animatedTextGradient { to { background-position: 200% center; } }
 /*JS elements styling*/
 .notFoundMessage{padding-block:9rem;}
 .emptyMessage{grid-column-start: 1; grid-column-end: -1; margin-block: 4rem; font-size: 0.9rem;}
@@ -267,6 +270,7 @@ main{margin-top:3.75rem;margin-bottom: 6.25rem;}
 .filterItem button {color: var(--light-gray);font-size: var(--fs-5);transition: var(--transition-1);}
 .filterItem button:hover { color: var(--light-gray-70); }
 .filterItem button.active { color: var(--orange-yellow-crayola); }
+.showcase-button.active{-webkit-text-fill-color:var(--orange-yellow-crayola);}
 .projectList, .blogList{grid-template-columns: 1fr 1fr;}
 .formFieldsWrap{grid-template-columns: 1fr 1fr;}
 .formBtn{width: max-content;margin-left: auto;}
