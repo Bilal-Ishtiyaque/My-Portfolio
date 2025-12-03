@@ -200,6 +200,14 @@ textarea.formInput::-webkit-resizer { display: none;}
 .formBtn:disabled {opacity: 0.7;cursor: not-allowed;}
 .formBtn:disabled:hover { background: var(--border-gradient-onyx); }
 .formBtn:disabled:hover::before { background: var(--bg-gradient-jet); }
+/* Github Calender CSS */
+.github-calendar-container{margin-top: 3rem; scrollbar-color: hsl(0deg 0% 22.2%) var(--eerie-black-2);}
+.github-calendar-container .sr-only{display: none;}
+.github-calendar-container .github-graph-heading{color: var(--white-2); padding-bottom: 2rem;}
+.github-calendar-container .color-fg-muted{display: flex; align-items: center; margin-top: 1rem;}
+.calendar{border:none; color: white;}
+.calendar .show-on-focus{display: none;}
+.ContributionCalendar-day[data-level='0']{background-color: black;}
 /* AI Button effect */
 .showcase-button {background: radial-gradient( circle at 70% 50%, #FC72FF 0%, #8F68FF 20%, #487BFF 40%, #2CD9FF 60%, #2CFFCC 80%, #8F68FF 100%); background-size: 200% auto; color: #000; background-clip: text; -webkit-text-fill-color: transparent; animation: animatedTextGradient 4s linear infinite;}
 @keyframes animatedTextGradient { to { background-position: 200% center; } }

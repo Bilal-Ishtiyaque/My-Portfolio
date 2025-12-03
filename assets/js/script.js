@@ -58,7 +58,7 @@ filterBtns.forEach((btn) => {
 });
 
 
-function handleFiltering(targetedCategory){
+function handleFiltering(targetedCategory) {
   const projectList = document.querySelector(".projectList");
   const projectItems = document.querySelectorAll(".projectItem");
   // Convert NodeList to array and filter matching ones
@@ -139,16 +139,16 @@ function validateFullName(name) {
 function validateEmail(email) {
   const trimmed = email.trim();
   // Check for empty input
-  if (!trimmed) {return "Email is required";}
+  if (!trimmed) { return "Email is required"; }
   // Check for length
-  if (trimmed.length > 70) {return "Email must not exceed 70 characters";}
+  if (trimmed.length > 70) { return "Email must not exceed 70 characters"; }
   // Check for forbidden characters (quotes)
-  if (/['"]/.test(trimmed)) {return "Email looks valid, but quotes aren't ideal";}
+  if (/['"]/.test(trimmed)) { return "Email looks valid, but quotes aren't ideal"; }
   // Check for consecutive dots
-  if (/\.\./.test(trimmed)) {return "Email contains consecutive dots";}
+  if (/\.\./.test(trimmed)) { return "Email contains consecutive dots"; }
   // Must contain exactly one "@"
   const parts = trimmed.split("@");
-  if (parts.length !== 2) {return "Email must contain exactly one '@' symbol";}
+  if (parts.length !== 2) { return "Email must contain exactly one '@' symbol"; }
   const [local, domain] = parts;
   // Check if local part starts or ends with special characters
   if (/^[.\-_+]|[.\-_+]$/.test(local)) return "Email can’t start or end with a special character";
@@ -159,7 +159,7 @@ function validateEmail(email) {
   // Check domain format
   if (!/^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,24}$/.test(domain)) return "Email domain format is invalid";
   // Disposable email check (keyword-based before last dot)
-  const disposableKeywords = ["tempmail","10minutemail","mailinator","fakeinbox","guerrillamail","dispostable","getnada","throwawaymail","trashmail","tempail","mintemail","maildrop","moakt","mytempemail","yopmail","spambog","mailcatch","spamgourmet","emailondeck","burnermail","instantemail","inboxkitten","mailnesia","nowmymail","anonaddy","easytrashmail","dropmail","tempr.email","fakemail","spam4.me","luxusmail","shitmail","deadaddress","relay.email","mailsac","trashmailbox"];
+  const disposableKeywords = ["tempmail", "10minutemail", "mailinator", "fakeinbox", "guerrillamail", "dispostable", "getnada", "throwawaymail", "trashmail", "tempail", "mintemail", "maildrop", "moakt", "mytempemail", "yopmail", "spambog", "mailcatch", "spamgourmet", "emailondeck", "burnermail", "instantemail", "inboxkitten", "mailnesia", "nowmymail", "anonaddy", "easytrashmail", "dropmail", "tempr.email", "fakemail", "spam4.me", "luxusmail", "shitmail", "deadaddress", "relay.email", "mailsac", "trashmailbox"];
   const domainBeforeLastDot = domain.substring(0, domain.lastIndexOf(".")).toLowerCase();
   if (disposableKeywords.some((keyword) => domainBeforeLastDot.includes(keyword))) {
     return "Disposable email addresses are not allowed";
@@ -172,9 +172,9 @@ function validateMessage(message) {
   const trimmedMessage = message.trim();
   // Check for minimum word count (at least 5 words)
   const wordCount = trimmedMessage.split(/\s+/).length;
-  if (wordCount < 5) {return "At least 5 words...";}
+  if (wordCount < 5) { return "At least 5 words..."; }
   // Check for maximum character length (1000 characters max)
-  if (trimmedMessage.length > 1000) {return "Message cannot exceed 1000 characters";}
+  if (trimmedMessage.length > 1000) { return "Message cannot exceed 1000 characters"; }
   // Check for forbidden URLs (spammy content)
   const spammyRegex = /\b(free|offer|discount|cheap|promo|sale|subscribe|limited time|win|winner|cash|money|credit card|loan|earn|guaranteed|viagra|porn|sex|sexy|fuck|fuck you|nude|xxx|adult|dating|escort|casino|gamble|mom|mother|sister|sis|sibling|investment|miracle|weight loss|ass|dick|mouth)\b/i;;
   if (spammyRegex.test(trimmedMessage)) return "Please remove promotional or inappropriate words";
@@ -189,12 +189,12 @@ function checkFormValidity() {
   const isValidFullName = validateFullName(fullNameInput.value) === "";
   const isValidEmail = validateEmail(emailInput.value) === "";
   const isValidMessage = validateMessage(messageInput.value) === "";
-  
+
   const isFormValid = isValidFullName && isValidEmail && isValidMessage;
-  
+
   formBtn.disabled = !isFormValid;
 
-  return isFormValid; 
+  return isFormValid;
 }
 
 
@@ -207,24 +207,24 @@ function debounce(func, delay = 800) {
 }
 
 fullNameInput.addEventListener("input", debounce(() => {
-    const result = validateFullName(fullNameInput.value);
-    fullNameError.textContent = result;
-    checkFormValidity();
-  })
+  const result = validateFullName(fullNameInput.value);
+  fullNameError.textContent = result;
+  checkFormValidity();
+})
 );
 
-emailInput.addEventListener( "input", debounce(() => {
-    const result = validateEmail(emailInput.value);
-    emailError.textContent = result;
-    checkFormValidity();
-  })
+emailInput.addEventListener("input", debounce(() => {
+  const result = validateEmail(emailInput.value);
+  emailError.textContent = result;
+  checkFormValidity();
+})
 );
 
 messageInput.addEventListener("input", debounce(() => {
-    const result = validateMessage(messageInput.value);
-    messageError.textContent = result;
-    checkFormValidity();
-  })
+  const result = validateMessage(messageInput.value);
+  messageError.textContent = result;
+  checkFormValidity();
+})
 );
 
 
@@ -252,4 +252,12 @@ form.addEventListener("submit", function (event) {
   // If valid, allow form to submit natively (no fetch needed)
   // Formspree will handle the POST submission as intended.
   formBtn.disabled = true;
+});
+
+// Github Calender JS
+
+GitHubCalendar(".calendar", "Bilal-Ishtiyaque", {
+  global_stats: false, // Optional: show or hide global stats
+  responsive: true, // Optional: enable responsive styling
+  tooltips: true, // Optional: enable tooltips on hover
 });
